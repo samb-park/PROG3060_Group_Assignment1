@@ -20,6 +20,11 @@ Before running this project, you'll need to have the following installed:
 git clone https://github.com/samb-park/PROG3060_Group_Assignment1.git
 ```
 
+### Database Schema
+- canadacensusdb : Canada Census information
+- hrmanager : User information
+
+
 ### Authors
 - Jisang Kim : jjoo0815@gmail.com
 - Sangbong Park : sangbong.park@outlook.com
