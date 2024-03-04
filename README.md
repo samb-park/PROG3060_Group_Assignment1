@@ -13,6 +13,13 @@ Before running this project, you'll need to have the following installed:
 - Apache Tomcat 10.1.181
 - Git
 
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/samb-park/PROG3060_Group_Assignment1.git
+```
+
 ### Authors
 - Jisang Kim : jjoo0815@gmail.com
 - Sangbong Park : sangbong.park@outlook.com
@@ -23,9 +30,5 @@ Before running this project, you'll need to have the following installed:
 - Apache Tomcat : Web Server and servlet container
 - MySQL : Database
 
-### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/samb-park/PROG3060_Group_Assignment1.git
 
