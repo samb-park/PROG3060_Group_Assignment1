@@ -19,6 +19,24 @@ Before running this project, you'll need to have the following installed:
 ```bash
 git clone https://github.com/samb-park/PROG3060_Group_Assignment1.git
 ```
+2. Database Setup
+To set up the database for the Canada Census DB:
+
+Open your MySQL database management tool (such as MySQL Workbench).
+Execute the db-schema.new file to create the necessary database and tables. This script is designed for setting up the canadacensusdb.
+To add the hrmanager schema and the employee table:
+
+Execute the following SQL query to create the hrmanager schema and employee table with id, username, and password fields:
+
+```bash
+CREATE SCHEMA `hrmanager`;
+
+CREATE TABLE `hrmanager`.`employee` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(50) NOT NULL,
+  `password` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id`));
+```
 
 ### Database Schema
 - canadacensusdb : Canada Census information
