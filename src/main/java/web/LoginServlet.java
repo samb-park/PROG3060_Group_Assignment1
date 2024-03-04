@@ -37,9 +37,8 @@ public class LoginServlet extends HttpServlet {
                 //if fails, redirect to login.jsp
                 response.sendRedirect("login.jsp");
             }
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (SQLException e) {
+
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

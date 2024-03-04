@@ -33,7 +33,6 @@
                     </form>
                 </div>
             </div>
-            <p class="text-center mt-3">Not registered? <a href="signup.jsp" class="link-primary">Register here</a></p>
         </div>
     </div>
 </div>
