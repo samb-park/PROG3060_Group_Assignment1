@@ -28,20 +28,12 @@ To add the hrmanager schema and the employee table:
 
 Execute the following SQL query to create the hrmanager schema and employee table with id, username, and password fields:
 
-```bash
-CREATE SCHEMA `hrmanager`;
-
-CREATE TABLE `hrmanager`.`employee` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `username` VARCHAR(50) NOT NULL,
-  `password` VARCHAR(50) NOT NULL,
-  PRIMARY KEY (`id`));
-```
-
 ### Database Schema
 - canadacensusdb : Canada Census information
-- hrmanager : User information
 
+### User Information
+- User : database username.
+- Password : database password.
 
 ### Authors
 - Jisang Kim : jjoo0815@gmail.com
