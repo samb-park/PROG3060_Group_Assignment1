@@ -11,7 +11,7 @@
   <div class="row justify-content-center">
     <div class="col-md-4">
       <div class="list-group mb-3">
-        <a href="geographicList.jsp" class="list-group-item list-group-item-action">
+        <a href="GeographicServlet?level=0" class="list-group-item list-group-item-action">
           1. Geographic Area Classification List
         </a>
         <a href="geographicDetail.jsp" class="list-group-item list-group-item-action active">2. Geographic Area Details</a>

@@ -8,7 +8,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 @WebServlet(name = "LoginServlet", value = "/login")
 public class LoginServlet extends HttpServlet {
@@ -30,7 +29,7 @@ public class LoginServlet extends HttpServlet {
             if(dbUtil.login(username, password))
             {
                 //if success, redirect to success.jsp with parameter
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("GeographicServlet?level=0");
             }
             else
             {

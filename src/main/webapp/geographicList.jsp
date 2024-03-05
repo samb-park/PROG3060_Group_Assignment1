@@ -1,3 +1,6 @@
+<%@ page import="bean.GeographicArea" %>
+<%@ page import="java.util.List" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,15 +14,30 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="list-group mb-3">
-                <a href="geographicList.jsp" class="list-group-item list-group-item-action active">
+                <a href="GeographicServlet?level=0" class="list-group-item list-group-item-action active">
                     1. Geographic Area Classification List
                 </a>
                 <a href="geographicDetail.jsp" class="list-group-item list-group-item-action">2. Geographic Area Details</a>
                 <a href="ageList.jsp" class="list-group-item list-group-item-action">3. Age List</a>
             </div>
-            <div>
-                Geographic Area Classification List
+            <div class="btn-group mb-3 w-100" role="group">
+                <a href="GeographicServlet?level=0" class="btn btn-outline-primary">LEVEL 0</a>
+                <a href="GeographicServlet?level=1" class="btn btn-outline-primary">LEVEL 1</a>
+                <a href="GeographicServlet?level=2" class="btn btn-outline-primary">LEVEL 2</a>
+                <a href="GeographicServlet?level=3" class="btn btn-outline-primary">LEVEL 3</a>
             </div>
+            <% List<GeographicArea> areas = (List<GeographicArea>) request.getAttribute("areas"); %>
+            <% if (areas != null && !areas.isEmpty()) { %>
+            <ul class="list-group">
+                <% for (GeographicArea area : areas) { %>
+                <li class="list-group-item">
+                    <%= area.getName() %> (Level: <%= area.getLevel() %>)
+                </li>
+                <% } %>
+            </ul>
+            <% } else { %>
+            <p>NO AREAS</p>
+            <% } %>
         </div>
 
     </div>
