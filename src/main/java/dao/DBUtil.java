@@ -1,7 +1,6 @@
 package dao;
 
 import bean.AgeList;
-import bean.User;
 
 import java.sql.*;
 import java.util.ArrayList;
