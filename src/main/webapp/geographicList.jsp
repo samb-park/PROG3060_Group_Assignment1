@@ -17,8 +17,9 @@
                 <a href="GeographicServlet?level=0" class="list-group-item list-group-item-action active">
                     1. Geographic Area Classification List
                 </a>
-                <a href="geographicDetail.jsp" class="list-group-item list-group-item-action">2. Geographic Area Details</a>
-                <a href="ageList.jsp" class="list-group-item list-group-item-action">3. Age List</a>
+                <a href="GeographicDetailServlet?name=Canada" class="list-group-item list-group-item-action">2. Geographic Area
+                    Details</a>
+                <a href="AgeListServlet?year=2021" class="list-group-item list-group-item-action">3. Age List</a>
             </div>
             <div class="btn-group mb-3 w-100" role="group">
                 <a href="GeographicServlet?level=0" class="btn btn-outline-primary">LEVEL 0</a>

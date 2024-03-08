@@ -1,6 +1,6 @@
 package bean;
 
-//
+// User variable for user object
 public class User {
     private String username;
     private String password;
