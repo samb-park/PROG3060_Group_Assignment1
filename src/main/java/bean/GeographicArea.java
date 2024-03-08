@@ -1,12 +1,14 @@
 package bean;
 
-// GegraphicArea variable to use for GegraphicServlet
+// Gegraphic Area variable to use for GegraphicServlet
 public class GeographicArea {
     private int geographicAreaID;
     private int code;
     private int level;
     private String name;
     private int alternativeCode;
+
+    private int total;
 
     public int getGeographicAreaID() {
         return geographicAreaID;
@@ -30,6 +32,14 @@ public class GeographicArea {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
     }
 
     public String getName() {
